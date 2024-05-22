@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(14, 13, 13);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+.gray {
+    color: rgb(164, 163, 163);
+}
+
+.white {
+    color: white;
+}
+
+button {
+    background: radial-gradient(rgb(255, 200, 0), rgb(255, 60, 0));
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+li:hover {
+    color: brown;
+    text-decoration: underline 2px white;
+    cursor: pointer;
+}
+
+.color {
+    color: rgb(255, 123, 0);
+}
+.logo{display: flex;
+align-items: center;
+position: relative;
+left: -40%;
+}
+.logo img{
+    height: 50px;
+}
+.navbar {
+    margin: 2%;
+    padding: 10px;
+    width: 94%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    left: 45%;
+
+}
+
+.navbar button {
+    font-size: medium;
+    font-weight: bold;
+    width: 150px;
+    padding: 8px;
+    border-radius: 50pt;
+
+}
+
+.house1 {
+
+    padding: 30px;
+    padding-top: 8.5%;
+    display: flex;
+    gap: 50px;
+}
+
+.house1 button {
+    font-size: medium;
+    font-weight: bold;
+    width: 220px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.text000{ width: 50vw;}
+.img{
+background-image: url(house1.jpg);
+background-size:cover;
+background-position: center;
+    width: 180vw;
+    height: 60vh;
+    border-radius: 30px;
+    }
+    
+.house2  img{
+    width: 100%;
+}
+
+.flextext {
+    display: flex;
+    gap: 50px;
+}
+
+.text00 {
+    width: 40%;
+    padding: 10px;
+    padding-top: 50px;
+    line-height: 30px;
+}
+
+.text0 {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.text0 b {
+    background-color: rgba(128, 128, 128, 0.598);
+    font-size: 30px;
+}
+
+.video {
+    padding: 50px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    border-radius: 50px;
+
+}
+
+.homelist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+.flex {
+   border: 1px solid lightslategray;
+    line-height: 25px;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.home img{
+ height: 400px;
+ width: 300px;
+ object-fit: cover;
+ border-radius: 20pt;
+ transition: transform .5s 0s ease-in-out;
+}
+.home img:hover{
+    transform: scale(1.4);
+    
+}
+.home{border-radius: 20pt;
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+    cursor: pointer;
+}
+.homelisttext{
+    width: 40%;
+}
+
+
+
+.flex button {
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+}
+
+.imgrotate {
+    display: flex;
+    gap: 50px;
+    padding: 5%;
+}
+
+.passage {
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+.rotate1{ height: 350px;
+    border-radius: 10px;
+    transform: rotate(-20deg);
+width: 280px;
+object-fit: cover;
+object-position: center;
+}
+.rotate2{ height: 350px;
+    border-radius: 10px;
+    transform: rotate(20deg);
+width: 280px;
+object-fit: cover;
+object-position: center;
+}
+.passage button {
+    height: 35px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.imgdiv1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    line-height: 25px;
+    padding: 10px;
+}
+
+.imgdiv2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    line-height: 25px;
+    padding: 10px;
+}
+.deal{
+    border-radius: 20px;
+    width: 95%;
+    object-fit: cover;
+
+}
+
+.fontsize {
+    font-size: 50px;
+}
+
+.imgbox {
+    display: grid;
+    grid-template-areas: "img1 img2";
+    gap: 30px;
+    padding: 30px;
+}
+.img1{ grid-area: img1;
+     background-image: url(house3.jpg);
+      background-size: cover;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      color: #000;
+      height: 500px;
+    }
+    .img2{ grid-area: img2;
+         background-image: url(house4.jpg);
+        text-align: center;
+      background-size:cover;
+      font-size: 50px;
+      height: 500px;
+}
+
+.text1 {
+    grid-area: img1;
+    opacity: 0;
+    padding: 25%;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.text1:hover,.text2:hover {
+    opacity: 1;
+    background-color: #00000064 ;
+    cursor: pointer;
+}
+
+.text2 {
+    grid-area: img2;
+    opacity: 0;
+    padding: 25%;
+    text-align: center;
+    font-size: 30px;
+   
+    
+}
+
+
+
+.hover1{
+    color:white;
+   background:rgba(0, 0, 0, 0.582);
+   height: 100px;
+   text-align: center;
+   width: 100px;
+   font-size: large;
+   border-radius: 50px;
+}
+.form{
+    background-color: whitesmoke;
+    text-align: center;
+    color: #000;
+    padding: 50px;
+    
+}
+input{
+    border-color: lightgray;
+    width: 85%;
+    height: 50px;
+}
+textarea{
+    border:solid 2px lightgray;
+    width: 85%;
+    height: 100px;
+}
+.form button{
+    font-weight: bold;
+    font-size: large;
+    width: 55%;
+    height: 40px;
+}
+.padding{text-align: center;
+font-size:50px;}
+.partner{
+    display: flex;
+    width: 90%;
+    padding: 5%;
+    gap: 20px;
+}
+.company{
+    text-align: center;
+    height: 180px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    color: #000;
+}
+.contact{
+    background-image: url(house5.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+}
+.contact ul{
+    
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 60px;
+}
+.hover2{
+   
+   color:white;
+   background:transparent;
+   height: 40px;
+   text-align: center;
+   width: 500px;
+   font-size: large;
+   border-radius: 50px;
+}
+.hover2:hover,.hover1:hover{
+    background:  radial-gradient(rgb(255, 200, 0), rgb(255, 60, 0));
+}
+.align{
+    padding-top: 26%;
+}
+.align h2,.align p{
+    color: cyan;
+    text-shadow: 10px 10px 2px black;
+    
+}
